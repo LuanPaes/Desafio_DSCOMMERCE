@@ -3,20 +3,20 @@ package com.desafio.dscommerce.desafio.services;
 import java.time.Instant;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devsuperior.dscommerce.dto.OrderDTO;
-import com.devsuperior.dscommerce.dto.OrderItemDTO;
-import com.devsuperior.dscommerce.entities.Order;
-import com.devsuperior.dscommerce.entities.OrderItem;
-import com.devsuperior.dscommerce.entities.OrderStatus;
-import com.devsuperior.dscommerce.entities.Product;
-import com.devsuperior.dscommerce.entities.User;
-import com.devsuperior.dscommerce.repositories.OrderItemRepository;
-import com.devsuperior.dscommerce.repositories.OrderRepository;
-import com.devsuperior.dscommerce.repositories.ProductRepository;
-import com.devsuperior.dscommerce.services.exceptions.ResourceNotFoundException;
+import com.desafio.dscommerce.desafio.dto.OrderDTO;
+import com.desafio.dscommerce.desafio.dto.OrderItemDTO;
+import com.desafio.dscommerce.desafio.entities.OrderItem;
+import com.desafio.dscommerce.desafio.entities.OrderStatus;
+import com.desafio.dscommerce.desafio.entities.Product;
+import com.desafio.dscommerce.desafio.entities.User;
+import com.desafio.dscommerce.desafio.repositories.OrderItemRepository;
+import com.desafio.dscommerce.desafio.repositories.OrderRepository;
+import com.desafio.dscommerce.desafio.repositories.ProductRepository;
+import com.desafio.dscommerce.desafio.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class OrderService {
